@@ -1,0 +1,14 @@
+.menu {
+    border: 5px solid;
+    border-color: brown;
+}
+
+.filterButtons {
+    margin: 5px;
+    border: 5px solid;
+    border-color: pink;
+}
+
+.filterButtons:hover {
+    background-color: pink;
+}

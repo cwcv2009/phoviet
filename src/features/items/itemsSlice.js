@@ -1,59 +1,54 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { addItemId } from '../categories/categoriesSlice';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 // Slice Object
 //////////////////////////
 export const itemsSlice = createSlice({
-    name: 'items',
-    initialState: {
-        //itemId: { 
-        //  itemId: itemId,
-        //  category: categoryId,    
-        //  name: name,
-        //  icon: icon,
-        //  description: description,
-        //  price: {s: price, m: price, l: price} || price,
-        //  cal: cal
-        //}
+  name: "items",
+  initialState: {
+    items: [],
+    isLoadingItems: false,
+    failedToLoadItems: false,
+  },
+  reducers: {
+    addItem: (state, action) => {
+      state.items.push(action.payload);
     },
-    reducers: {
-        addItem: (state, action) => {
-            const { itemId, categoryId, name, icon, description, price, cal} = action.payload;
-            state[itemId] = {
-                itemId: itemId,
-                categoryId: categoryId,
-                icon: icon,
-                description: description,
-                price: price,
-                cal: cal
-            }
-        },
-        removeItem: (state, action) => {
-            const { id } = action.payload;
-            delete state[id];
-        }
-    }
+    removeItem: (state, action) => {
+      state.items.filter((item) => item !== action.payload);
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(loadItems.pending, (state, action) => {
+        state.isLoadingItems = true;
+        state.failedToLoadFilters = false;
+      })
+      .addCase(loadItems.fulfilled, (state, action) => {
+        state.isLoadingItems = false;
+        state.failedToLoadItems = false;
+        action.payload.forEach((item) => state.items.push(item));
+      })
+      .addCase(loadItems.rejected, (state, action) => {
+        state.isLoadingItems = false;
+        state.failedToLoadItems = true;
+      });
+  },
 });
 
 // Selectors
 //////////////////////////
 export const selectItems = (state) => state.items;
 
-// Asynchronous Thunks
+// Asynchronous Thunk
 //////////////////////////
-export const addItemAddItemId = (item) =>{
-    const { categoryId, itemId } = item;
-    return (dispatch) => {
-        dispatch(itemsSlice.actions.addItem(item));
-        dispatch(addItemId({ categoryId: categoryId, itemId: itemId })); ///////////may produce an error
-    }
-}
+export const loadItems = createAsyncThunk("items/loadItems", async (thunkAPI) => {
+  const data = await fetch(`/items`);
+  const json = await data.json();
+  return json;
+});
 
 // Exports
 //////////////////////////
-export const {
-    addItem,
-    removeItem
- } = itemsSlice.actions;
+export const { addItem, removeItem } = itemsSlice.actions;
 
 export default itemsSlice.reducer;

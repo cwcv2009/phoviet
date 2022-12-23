@@ -1,0 +1,23 @@
+[
+    {
+        "categoryId" : "1",
+        "name": "categoryOne",
+        "icon": "-CAT_ONE-",
+        "itemIds": ["1", "2", "3", "4", "5"],
+        "display": true
+    },
+    {
+        "categoryId" : "2",
+        "name": "categoryTwo",
+        "icon": "-CAT_TWO-",
+        "itemIds": ["6", "7", "8", "9", "10"],
+        "display": true 
+    },
+    {
+        "categoryId" : "3",
+        "name": "categoryThree",
+        "icon": "-CAT_THREE-",
+        "itemIds": ["11", "12", "13", "14", "15"],
+        "display": true
+    }
+]

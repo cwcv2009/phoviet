@@ -1,0 +1,17 @@
+[
+    {
+        "filterId": "1",
+        "name": "filterOne",
+        "display": true
+    },
+    {
+        "filterId": "2",
+        "name": "filterTwo",
+        "display": true
+    },
+    {
+        "filterId": "3",
+        "name": "filterThree",
+        "display": true
+    }
+]
