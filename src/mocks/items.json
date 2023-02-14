@@ -1,137 +1,137 @@
 [
-    {
-        "itemId": "1",
-        "categoryId": "1",
-        "name": "itemOne",
-        "icon": "-ITEM_ONE-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "2",
-        "categoryId": "1",
-        "name": "itemTwo",
-        "icon": "-ITEM_TWO-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "3",
-        "categoryId": "1",
-        "name": "itemThree",
-        "icon": "-ITEM_THREE-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "4",
-        "categoryId": "1",
-        "name": "itemFour",
-        "icon": "-ITEM_FOUR-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "5",
-        "categoryId": "1",
-        "name": "itemFive",
-        "icon": "-ITEM_FIVE-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "6",
-        "categoryId": "2",
-        "name": "itemSix",
-        "icon": "-ITEM_SIX-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "7",
-        "categoryId": "2",
-        "name": "itemSeven",
-        "icon": "-ITEM_SEVEN-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "8",
-        "categoryId": "2",
-        "name": "itemEight",
-        "icon": "-ITEM_EIGHT-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "9",
-        "categoryId": "2",
-        "name": "itemNine",
-        "icon": "-ITEM_NINE-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "10",
-        "categoryId": "2",
-        "name": "itemTen",
-        "icon": "-ITEM_TEN-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-{
-        "itemId": "11",
-        "categoryId": "3",
-        "name": "itemEleven",
-        "icon": "-ITEM_ELEVEN-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-{
-        "itemId": "12",
-        "categoryId": "3",
-        "name": "itemTwelve",
-        "icon": "-ITEM_TWELVE-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "13",
-        "categoryId": "3",
-        "name": "itemThirteen",
-        "icon": "-ITEM_THIRTEEN-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "14",
-        "categoryId": "3",
-        "name": "itemFouteen",
-        "icon": "-ITEM_FOURTEEN-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    },
-    {
-        "itemId": "15",
-        "categoryId": "3",
-        "name": "itemFifteen",
-        "icon": "-ITEM_FIFTEEN-",
-        "description": "description",
-        "price": {"s": 1.00, "m": 2.00, "l": 3.00},
-        "cal": "cal"
-    }
+  {
+    "itemId": "1",
+    "categoryId": "1",
+    "name": "itemOne",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "2",
+    "categoryId": "1",
+    "name": "itemTwo",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "3",
+    "categoryId": "1",
+    "name": "itemThree",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "4",
+    "categoryId": "1",
+    "name": "itemFour",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "5",
+    "categoryId": "1",
+    "name": "itemFive",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "6",
+    "categoryId": "2",
+    "name": "itemSix",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "7",
+    "categoryId": "2",
+    "name": "itemSeven",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "8",
+    "categoryId": "2",
+    "name": "itemEight",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "9",
+    "categoryId": "2",
+    "name": "itemNine",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "10",
+    "categoryId": "2",
+    "name": "itemTen",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "11",
+    "categoryId": "3",
+    "name": "itemEleven",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "12",
+    "categoryId": "3",
+    "name": "itemTwelve",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "13",
+    "categoryId": "3",
+    "name": "itemThirteen",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "14",
+    "categoryId": "3",
+    "name": "itemFouteen",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  },
+  {
+    "itemId": "15",
+    "categoryId": "3",
+    "name": "itemFifteen",
+    "thumbnail": "./thumbnails/PhoThumbnail.png",
+    "description": "description",
+    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
+    "cal": "cal"
+  }
 ]

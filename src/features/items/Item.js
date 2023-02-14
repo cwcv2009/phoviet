@@ -1,10 +1,13 @@
 import { useSelector } from "react-redux";
 import { selectItems } from "./itemsSlice";
 
-export default function Item({ itemId }) {
+export default function Item({ itemIndex }) {
   const items = useSelector(selectItems);
-  // console.log(items.isLoadingItems);
-  // const item = items.find(item => item.itemId === itemId);
+  const item = items[itemIndex];
 
-  return <div>{}</div>;
+  return(
+    <div>
+      {"item"}
+    </div>
+  );
 }

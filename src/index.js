@@ -12,9 +12,9 @@ if (process.env.NODE_ENV === 'development') {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
+  <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-  // </React.StrictMode>
+  </React.StrictMode>
 );

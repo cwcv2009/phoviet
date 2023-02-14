@@ -6,8 +6,8 @@ export const itemsSlice = createSlice({
   name: "items",
   initialState: {
     items: [],
-    isLoadingItems: false,
-    failedToLoadItems: false,
+    status: "idle",
+    error: false,
   },
   reducers: {
     addItem: (state, action) => {
@@ -20,32 +20,40 @@ export const itemsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(loadItems.pending, (state, action) => {
-        state.isLoadingItems = true;
-        state.failedToLoadFilters = false;
+        state.status = "loading";
+        state.error = false;
       })
       .addCase(loadItems.fulfilled, (state, action) => {
-        state.isLoadingItems = false;
-        state.failedToLoadItems = false;
-        action.payload.forEach((item) => state.items.push(item));
+        state.items = action.payload;
+        state.status = "idle";
+        state.error = false;
+
       })
       .addCase(loadItems.rejected, (state, action) => {
-        state.isLoadingItems = false;
-        state.failedToLoadItems = true;
+        state.status = "idle";
+        state.error = action.payload;
       });
   },
 });
 
 // Selectors
 //////////////////////////
-export const selectItems = (state) => state.items;
+export const selectItems = (state) => state.items.items;
+export const itemsStatus = (state) =>
+  state.items.status;
+export const itemsError = (state) =>
+  state.items.error;
 
 // Asynchronous Thunk
 //////////////////////////
-export const loadItems = createAsyncThunk("items/loadItems", async (thunkAPI) => {
-  const data = await fetch(`/items`);
-  const json = await data.json();
-  return json;
-});
+export const loadItems = createAsyncThunk(
+  "items/loadItems",
+  async (thunkAPI) => {
+    const data = await fetch(`/items`);
+    const json = await data.json();
+    return json;
+  }
+);
 
 // Exports
 //////////////////////////
