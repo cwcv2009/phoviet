@@ -6,8 +6,8 @@ export const itemsSlice = createSlice({
   name: "items",
   initialState: {
     items: [],
-    status: "idle",
-    error: false,
+    isLoadingItems: false,
+    failedToLoadItems: false,
   },
   reducers: {
     addItem: (state, action) => {
@@ -20,18 +20,17 @@ export const itemsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(loadItems.pending, (state, action) => {
-        state.status = "loading";
-        state.error = false;
+        state.isLoadingItems = true;
+        state.failedToLoadItems = false;
       })
       .addCase(loadItems.fulfilled, (state, action) => {
         state.items = action.payload;
-        state.status = "idle";
-        state.error = false;
-
+        state.isLoadingItems = false;
+        state.failedToLoadItems = false;
       })
       .addCase(loadItems.rejected, (state, action) => {
-        state.status = "idle";
-        state.error = action.payload;
+        state.isLoadingItems = false;
+        state.failedToLoadItems = true;
       });
   },
 });
@@ -39,10 +38,8 @@ export const itemsSlice = createSlice({
 // Selectors
 //////////////////////////
 export const selectItems = (state) => state.items.items;
-export const itemsStatus = (state) =>
-  state.items.status;
-export const itemsError = (state) =>
-  state.items.error;
+export const isLoadingItems = (state) => state.items.isLoadingItems;
+export const failedToLoadItems = (state) =>state.items.failedToLoadItems;
 
 // Asynchronous Thunk
 //////////////////////////
