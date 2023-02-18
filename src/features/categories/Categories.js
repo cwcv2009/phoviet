@@ -13,7 +13,7 @@ export default function Categories() {
         return (
           <div key={index}>
             <h1>{category.name}_____________________</h1>
-            <img src={"../mockData/thumbnails/CategoryThumbnail.png"} alt=""></img>
+            <img src={"/thumbnails/CategoryThumbnail.png"} alt=""></img>
           </div>
         );
       })}

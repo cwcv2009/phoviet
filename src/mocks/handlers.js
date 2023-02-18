@@ -2,7 +2,7 @@
 import { rest } from "msw";
 import categoriesData from "./categories.json";
 import itemsData from "./items.json";
-// import base64Image from "!url-loader!./thumnails/CategoryThumbnail.png";
+import base64Image from "./thumbnails/CategoryThumbnail.png";
 
 function mockDelay(milliseconds) {
   const date = Date.now();
@@ -51,24 +51,23 @@ export const handlers = [
   ////
 
   rest.get(`/categories`, (req, res, ctx) => {
-    mockDelay(1500);
-    console.log("here");
+    mockDelay(500);
     return res(ctx.status(200), ctx.json(categoriesData));
   }),
   rest.get(`/items`, (req, res, ctx) => {
-    mockDelay(2500);
+    mockDelay(1000);
     return res(ctx.status(200), ctx.json(itemsData));
   }),
-  // rest.get(`/thumbnails/CategoryThumbnail.png`, async (_, res, ctx) => {
-  //   // Convert "base64" image to "ArrayBuffer".
-  //   const imageBuffer = await fetch(base64Image).then((res) =>
-  //     res.arrayBuffer()
-  //   );
-  //   return res(
-  //     ctx.set("Content-Length", imageBuffer.byteLength.toString()),
-  //     ctx.set("Content-Type", "image/png"),
-  //     // Respond with the "ArrayBuffer".
-  //     ctx.body(imageBuffer)
-  //   );
-  // }),
+  rest.get(`/thumbnails/CategoryThumbnail.png`, async (_, res, ctx) => {
+    // Convert "base64" image to "ArrayBuffer".
+    const imageBuffer = await fetch(base64Image).then((res) =>
+      res.arrayBuffer()
+    );
+    return res(
+      ctx.set("Content-Length", imageBuffer.byteLength.toString()),
+      ctx.set("Content-Type", "image/png"),
+      // Respond with the "ArrayBuffer".
+      ctx.body(imageBuffer)
+    );
+  }),
 ];
