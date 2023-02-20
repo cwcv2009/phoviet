@@ -53,10 +53,12 @@ export const handlers = [
 
   rest.get(`/categories`, (req, res, ctx) => {
     mockDelay(500);
+    console.log("mock category");
     return res(ctx.status(200), ctx.json(categoriesData));
   }),
   rest.get(`/items`, (req, res, ctx) => {
-    mockDelay(1000);
+    mockDelay(2500);
+    console.log("mock item");
     return res(ctx.status(200), ctx.json(itemsData));
   }),
   rest.get(`/thumbnails/CategoryThumbnail.png`, async (_, res, ctx) => {

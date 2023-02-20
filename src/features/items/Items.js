@@ -11,12 +11,13 @@ export default function Item({ categoryId }) {
         if (item.categoryId === categoryId) {
           return (
             <div className="items" key={index}>
-              <h2>{item.name}</h2>
-              <img
+              {/* <img
                 className="itemImages"
                 src={"/thumbnails/itemThumbnail.png"}
                 alt=""
-              ></img>
+              ></img> */}
+              <h2>{item.name}</h2>
+              <h3>{item.s}</h3>
             </div>
           );
         }

@@ -54,8 +54,10 @@ export const categoriesSlice = createSlice({
 // Selectors
 //////////////////////////
 export const selectCategories = (state) => state.categories.categories;
-export const isLoadingCategories = (state) => state.categories.isLoadingCategories;
-export const failedToLoadCategories = (state) => state.categories.failedToLoadCategories;
+export const isLoadingCategories = (state) =>
+  state.categories.isLoadingCategories;
+export const failedToLoadCategories = (state) =>
+  state.categories.failedToLoadCategories;
 
 // Asynchronous Thunk
 //////////////////////////

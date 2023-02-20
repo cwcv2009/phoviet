@@ -4,134 +4,194 @@
     "categoryId": "1",
     "name": "itemOne",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "2",
     "categoryId": "1",
     "name": "itemTwo",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "3",
     "categoryId": "1",
     "name": "itemThree",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "4",
     "categoryId": "1",
     "name": "itemFour",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "5",
     "categoryId": "1",
     "name": "itemFive",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "6",
     "categoryId": "2",
     "name": "itemSix",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "7",
     "categoryId": "2",
     "name": "itemSeven",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "8",
     "categoryId": "2",
     "name": "itemEight",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "9",
     "categoryId": "2",
     "name": "itemNine",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "10",
     "categoryId": "2",
     "name": "itemTen",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "11",
     "categoryId": "3",
     "name": "itemEleven",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "12",
     "categoryId": "3",
     "name": "itemTwelve",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "13",
     "categoryId": "3",
     "name": "itemThirteen",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "14",
     "categoryId": "3",
     "name": "itemFouteen",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   },
   {
     "itemId": "15",
     "categoryId": "3",
     "name": "itemFifteen",
     "thumbnail": "./thumbnails/PhoThumbnail.png",
-    "description": "description",
-    "price": { "s": 1.0, "m": 2.0, "l": 3.0 },
-    "cal": "cal"
+    "description": "This is where the description of the item would be. It could describe the ingredients, how the item is made, and how popular it is.",
+    "size": {
+      "s": ["Small", "50 Cal", "$1.00"],
+      "m": ["Medium", "100 Cal", "$2.00"],
+      "l": ["Large", "150 Cal", "$3.00"]
+    },
+    "allergies": []
   }
 ]

@@ -1,24 +1,26 @@
-import "./Menu.css";
-import Categories from "../features/categories/Categories";
-import {
-  isLoadingCategories,
-  loadCategories,
-} from "../features/categories/categoriesSlice";
+import { isLoadingCategories, loadCategories } from "../features/categories/categoriesSlice";
+import { isLoadingItems, loadItems } from "../features/items/itemsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
 export default function Menu() {
   const dispatch = useDispatch();
-  const loading = useSelector(isLoadingCategories);
+  const loadingCategories = useSelector(isLoadingCategories);
+  const loadingItems = useSelector(isLoadingItems);
 
   useEffect(() => {
     dispatch(loadCategories());
   }, [dispatch]);
 
+  useEffect(() => {
+    dispatch(loadItems());
+  }, [dispatch]);
+
   return (
     <div>
-      {loading && <div>loading</div>}
-      {!loading && <Categories />}
+      {console.log("component return")}
+      {loadingCategories ? <p>Loading Categories</p> : <p>Category</p>}
+      {loadingItems ? <p>Loading Items</p> : <p>Items</p>}
     </div>
   );
 }

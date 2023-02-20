@@ -7,28 +7,17 @@ import { useEffect } from "react";
 
 export default function Categories() {
   const categories = useSelector(selectCategories);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const loading = useSelector(isLoadingItems);
 
-  useEffect(() => {
-    dispatch(loadItems());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(loadItems());
+  // }, [dispatch]);
 
   return (
     <div>
-      {categories.map((category, index) => {
-        return (
-          <div className="categories" key={index}>
-            <img
-              className="categoryImages"
-              src={"/thumbnails/CategoryThumbnail.png"}
-              alt=""
-            ></img>
-            <h1>{category.name}_____________________</h1>
-            <Items categoryId={category.categoryId} />
-          </div>
-        );
-      })}
+      {loading && <div>Loading Items</div>}
+      {!loading && <div>Items</div>}
     </div>
   );
 }
