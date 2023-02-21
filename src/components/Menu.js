@@ -10,15 +10,16 @@ export default function Menu() {
 
   useEffect(() => {
     dispatch(loadCategories());
+    console.log("categories");
   }, [dispatch]);
 
   useEffect(() => {
     dispatch(loadItems());
+    console.log("items");
   }, [dispatch]);
 
   return (
     <div>
-      {console.log("component return")}
       {loadingCategories ? <p>Loading Categories</p> : <p>Category</p>}
       {loadingItems ? <p>Loading Items</p> : <p>Items</p>}
     </div>

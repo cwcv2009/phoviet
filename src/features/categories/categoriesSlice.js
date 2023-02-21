@@ -9,30 +9,7 @@ export const categoriesSlice = createSlice({
     isLoadingCategories: false,
     failedToLoadCategories: false,
   },
-  reducers: {
-    addCategory: (state, action) => {
-      state.categories.push(action.payload);
-    },
-    removeCategory: (state, action) => {
-      state.categories.filter((category) => category !== action.payload);
-    },
-    addItemId: (state, action) => {
-      const { categoryIndex, itemId } = action.payload;
-      state.categories[categoryIndex].itemIds.push(itemId);
-    },
-    removeItemId: (state, action) => {
-      const { categoryIndex, itemIdIndex } = action.payload;
-      state.categories[categoryIndex].itemIds.filter(
-        (itemId) => itemId !== itemIdIndex
-      );
-    },
-    toggleDisplay: (state, action) => {
-      const categoryIndex = action.payload;
-      state.categories[categoryIndex].display === true
-        ? (state.categories[categoryIndex].display = false)
-        : (state.categories[categoryIndex].display = true);
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(loadCategories.pending, (state, action) => {
@@ -69,15 +46,5 @@ export const loadCategories = createAsyncThunk(
     return json;
   }
 );
-
-// Exports
-//////////////////////////
-export const {
-  addCategory,
-  removeCategory,
-  addItemId,
-  removeItemId,
-  toggleDisplay,
-} = categoriesSlice.actions;
 
 export default categoriesSlice.reducer;

@@ -9,14 +9,7 @@ export const itemsSlice = createSlice({
     isLoadingItems: false,
     failedToLoadItems: false,
   },
-  reducers: {
-    addItem: (state, action) => {
-      state.items.push(action.payload);
-    },
-    removeItem: (state, action) => {
-      state.items.filter((item) => item !== action.payload);
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(loadItems.pending, (state, action) => {
@@ -51,9 +44,5 @@ export const loadItems = createAsyncThunk(
     return json;
   }
 );
-
-// Exports
-//////////////////////////
-export const { addItem, removeItem } = itemsSlice.actions;
 
 export default itemsSlice.reducer;
