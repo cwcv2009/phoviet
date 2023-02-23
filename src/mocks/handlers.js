@@ -13,15 +13,13 @@ function mockDelay(milliseconds) {
 
 export const handlers = [
   rest.get(`/categories`, (req, res, ctx) => {
-    console.log("categories handler one");
-    mockDelay(5500);
-    console.log("categories handler two");
+    mockDelay(500);
     return res(ctx.status(200), ctx.json(categoriesData));
   }),
   rest.get(`/items`, (req, res, ctx) => {
-    console.log("items handler one");
-    mockDelay(3000);
-    console.log("items handler two");
+    mockDelay(500);
     return res(ctx.status(200), ctx.json(itemsData));
   }),
 ];
+
+// try mockDelay in async thunks

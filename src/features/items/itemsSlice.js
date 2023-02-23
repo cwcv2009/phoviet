@@ -38,8 +38,8 @@ export const failedToLoadItems = (state) =>state.items.failedToLoadItems;
 //////////////////////////
 export const loadItems = createAsyncThunk(
   "items/loadItems",
-  async (thunkAPI) => {
-    const data = await fetch(`/items`);
+  async () => {
+    const data = await fetch(`https://www.reddit.com/subreddits.json`);
     const json = await data.json();
     return json;
   }

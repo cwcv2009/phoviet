@@ -10,12 +10,10 @@ export default function Menu() {
 
   useEffect(() => {
     dispatch(loadCategories());
-    console.log("categories");
   }, [dispatch]);
 
   useEffect(() => {
     dispatch(loadItems());
-    console.log("items");
   }, [dispatch]);
 
   return (

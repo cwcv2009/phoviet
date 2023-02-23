@@ -41,7 +41,9 @@ export const failedToLoadCategories = (state) =>
 export const loadCategories = createAsyncThunk(
   "categories/loadCategories",
   async () => {
-    const data = await fetch(`/categories`);
+    const data = await fetch(
+      `https://www.reddit.com/r/financialindependence.json`
+    );
     const json = await data.json();
     return json;
   }
